@@ -1,0 +1,128 @@
+--- 
+---
+@import url("https://unpkg.com/purecss@1.0.1/build/base-min.css");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Mansalva|Montserrat|Nova+Square|Ubuntu&display=swap');
+@import "assets/highlight.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #ddd;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: #333;
+}
+
+p, ul {
+    line-height: 180%;
+}
+
+h1, h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    color: #f92672;
+    text-decoration: none;
+
+    &:hover {
+        text-shadow: 0 0 2px #ff00d4;
+    }
+}
+
+header {
+    display: flex;
+    width: 850px;
+    margin: 0 auto 10px;
+    padding: 20px;
+
+    a {
+        color: inherit;
+    }
+
+    nav {
+        flex-grow: 1;
+        line-height: 56px;
+    }
+
+    #socialTop {
+        line-height: 60px;
+        font-size: 1.5em;
+    }
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+    padding: 0 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #222;
+
+    &::before,
+    &::after {
+        position: absolute;
+        top: 12px;
+        color: #555;
+        font-size: 74px;
+        font-weight: lighter;
+    }
+
+    &::before {
+        content: '{';
+        left: 0;
+    }
+
+    &::after {
+        content: '}';
+        right: 0;
+    }
+
+    span {
+        position: relative;
+        display: block;
+    }
+
+    .logo-ch {
+        font-family: 'Mansalva', cursive;
+    }
+
+    .logo-co {
+        font-family: 'Nova Square', cursive;
+    }
+}
+
+.content {
+    width: 750px;
+    margin: 0 auto 30px;
+    padding: 10px 30px;
+    text-shadow: 1px 1px 2px #222;
+    background: #444;
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.25);
+
+    h1 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .post-meta {
+        margin: 0 0 30px;
+        text-align: center;
+        font-size: 0.8em;
+    }
+}
+
+footer {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.75em;
+
+    a {
+        color: inherit;
+    }
+}
